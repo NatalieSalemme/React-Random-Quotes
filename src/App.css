@@ -25,13 +25,16 @@
   border: 2px solid blue;
   width: 40%;
   margin: auto;
+  margin-top: 5em;
   height: 10em;
+
 }
 #text {
-  color: green;
+  color: white;
+  height: 50px;
 }
 #author {
-  color: red;
+  color: white;
 }
 .flex-row {
   display: flex;
@@ -39,9 +42,15 @@
   justify-content: space-around;
   margin-top: 3em;
 }
-/* .row {
-  display: inline-block;
-} */
+.social-media-container {
+  margin-left: -2em;
+}
+.quote-container {
+  margin-right: -2em;
+}
+#quote-button {
+  float: right;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
