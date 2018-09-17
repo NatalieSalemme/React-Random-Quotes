@@ -52,22 +52,8 @@ export class App extends React.Component {
          <p id="author" style={{float: 'right', fontSize: 10, color: this.state.bgColor}}>-{this.state.author}</p>
           <div className="flex-row">
             <div className="social-media-container">
-
-              {/* <a class="twitter-share-button"
-                href="https://twitter.com/intent/tweet?text=Hello%20world">
-              Tweet</a> */}
-              {/* <a class="twitter-share-button"
-                 href="https://twitter.com/intent/tweet?"
-                 target="_blank"
-                 data-text="custom share text"> */}
-
-
-                 <a href="https://twitter.com/intent/tweet?
-                  text=testing thist" target="_blank">
-
-
-
-              {/* <a href="https://twitter.com/intent/retweet?tweet_id=hello" target="blank"> */}
+              <a href={'https://twitter.com/intent/tweet?text=' + this.state.quote +
+              ' - ' + this.state.author} target="_blank">
           <img
             id="tweet-quote"
             style={{height: 20, width: 20}}
