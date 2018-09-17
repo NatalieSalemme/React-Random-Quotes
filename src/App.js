@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 const colors = ['#776d6b', '#ef9d8d', '#f9a366', '#cebe88', '#8fb74b', '#40845a', '#368c8a',
 '#3a5c99', '#645ba3', '#7b1bb7', '#ffaaf0', '#ad1353', '#182968'];
 const quote = [
@@ -45,9 +46,10 @@ export class App extends React.Component {
   }
   render() {
     return (
+      <div id="body" style={{backgroundColor: this.state.bgColor}}>
+        <div style={{backgroundColor: this.state.bgColor, height: 80}}></div>
+      <div id="quote-box" style={{backgroundColor: 'white'}}>
 
-      <div id="quote-box" >
-        <div>
         <div id="text" style={{color: this.state.bgColor}}>{this.state.quote}</div>
          <p id="author" style={{float: 'right', fontSize: 10, color: this.state.bgColor}}>-{this.state.author}</p>
           <div className="flex-row">
@@ -60,19 +62,13 @@ export class App extends React.Component {
             src={ require ('./images/twitter.jpg')}
             alt="Twitter icon" />
           </a>
-          <a href="https://www.tumblr.com" target="blank">
-          <img
-            style={{height: 20, width: 20}}
-            src= { require ('./images/tumblr.png')}
-            alt="Tumblr icon"/>
-          </a>
             </div>
             <div className="quote-container">
               <button onClick={this.random} id="quote-button" style={{backgroundColor: this.state.bgColor, color: 'white'}}>New Quote</button>
         </div>
           </div>
       </div>
-        <p style={{fontSize: 9, textAlign: 'center'}}>By Natalie Salemme</p>
+        <p style={{fontSize: 9, textAlign: 'center', color: 'white'}}>By Natalie Salemme</p>
      </div>
 
     );
